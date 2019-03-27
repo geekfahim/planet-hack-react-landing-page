@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 %grd1{
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,7 +20,7 @@
 }
 $custom-color:#520FAC ;
 $white:#fff;
-$secondary:#7F00FF;
+$secondary:#5120ac;
 
 
 .bg-m{
@@ -30,7 +32,7 @@ body{
 }
 
 .navbar-brand .logo{
-    width: 100px;
+    width: 80px;
 }
 .bg-item{
     background-color: #fff;
@@ -38,14 +40,23 @@ body{
     margin-top: 10px;
     //margin-bottom: 50px;
 }
+.bg-gray{
+    background-color:#f7f7f7;
+    padding: 50px;
+    margin-top: 10px;      
+}
 .bg-itemn{
     background-color: #fff;
     margin-top: 10px;
 }
 .main-title{
     text-align: center;
-    position: relative;
     font-size: 'Poppins', sans-serif;
+    h1{
+        position: relative;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
 }
 .sub-title{
  text-align: center; 
@@ -93,6 +104,9 @@ margin-top: 40%;
     margin-top: 20px;
     text-transform: uppercase;
     @extend %grd1;
+    h1{
+        font-weight:bold;
+    }
 }
 .img-client{
     width: 95%;
@@ -107,8 +121,21 @@ margin-top: 40%;
     transition: all 0.1s ease-in-out;
 }
 
-
-
+.title{
+    color: #000;
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        line-height:1.2;
+        font-weight: bold;
+        font-family: 'Rubik',sans-serif;
+    }
+}
+.mini-title{
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+    line-height: 2;
+}
 .pc-bg{
     @extend %allinone;
     position: relative;
@@ -127,6 +154,7 @@ margin-top: 40%;
         font-size: 50px;
         font-weight: 600;
         line-height: 2;
+        font-weight: bold;
     }
 }
 
@@ -143,6 +171,7 @@ margin-top: 40%;
 .section_title_all h3 {
     text-transform: capitalize;
     font-weight: 500;
+    font-weight: bold;
 }
 .section_subtitle {
     max-width: 550px;
@@ -177,18 +206,18 @@ margin-top: 40%;
 
 .main-title h1::before {
     display: block;
-    content: '';
-    width: 100px;
-    height: 3px;
+    content: "";
+    width: 6%;
+    height: 5px;
     background: #5224b3;
     position: absolute;
-    top: 61.9px;
-    left: 48%;
+    top: 60px;
+    left: 47%;
 }
 .main-title h1::after {
     display: block;
     content: '';
-    width: 200px;
+    width: 10%;
     height: 1px;
     background: #5224b3;
     margin: 30px 0 30px 0;
@@ -201,7 +230,7 @@ margin-top: 40%;
 .footer{
     margin-top:50px;
     background: $secondary;
-    padding: 50px;
+    padding: 10px;
     ul{
         list-style: none;
         list-style-type: none;
@@ -215,7 +244,9 @@ margin-top: 40%;
     .columns {
         margin-top: 35px;
     }
-
+    .level-social{
+        text-align: center
+    }
     .footer-logo {
         img {
             width: 100%;
@@ -223,6 +254,7 @@ margin-top: 40%;
         h5{
             text-align: center;
             letter-spacing: 2px;
+            font-size: 16px;
         }
     }
 
@@ -287,4 +319,55 @@ margin-top: 40%;
     &.no-margin {
         margin: 0 !important;
     }
+}
+.banner-bg {
+    background: url("../Assets/images/bg1.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+  
+  .overlay-img {
+    position: absolute;
+    background: rgba(0, 0, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .banner-title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 4rem; 
+    font-weight: bold;
+  }
+.m-auto{
+    margin: auto;
+}
+  /* primary-menu */
+.primarymenu{
+    .nav-item{
+        position: relative;
+    }
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.navbar-light .navbar-nav .nav-link.active:after{
+    background-color:#ffe800;
+    width: 100%;
+}
+.primarymenu a:after{content:"";display:block;position:absolute;bottom: -18px;
+    right:0;width:0%; height:5px;
+    background-color:#ffe800;
+    -webkit-transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+    transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+.primarymenu a:hover:after{width:100%;}
+
+.icon-blue{
+    color:#4e54c8;
 }

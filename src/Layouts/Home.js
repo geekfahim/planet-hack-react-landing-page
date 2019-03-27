@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <PrimaryMenu />
       <HomeSlider />
-      <MinServices title="Services" subtitle="this is a subtitle"/>
+      <MinServices title="Services" />
       <WeAre /> 
       <HomeProducts/>
       <Client/>

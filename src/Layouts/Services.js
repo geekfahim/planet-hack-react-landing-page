@@ -1,7 +1,11 @@
 import React from 'react';
+import PrimaryMenu from '../Components/PrimaryMenu';
 const Services = () => {
     return ( 
-        <div></div>
+        <div>
+          <PrimaryMenu />
+
+        </div>
      );
 }
  

@@ -11,19 +11,19 @@ const HomeProducts = () => {
   return (
     <div>
     <div className="container-fluid">
-    <section class="section_all bg_custom_color m-t-10">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section_title_all text-center">
-                <div class="section_icons text-white">
-                <i class="fas fa-2x  fa-sitemap"></i>
+    <section className="section_all bg_custom_color m-t-10">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section_title_all text-center">
+                <div className="section_icons text-white">
+                <i className="fas fa-2x  fa-sitemap"></i>
                 </div>
-                <h6 class="mt-3 text-uppercase text-white section_tag">
+                <h6 className="mt-3 text-uppercase text-white section_tag">
                   Work Process{" "}
                 </h6>
-                <h1 class="mt-3 text-white">How it works ?</h1>
-                <p class="section_subtitle mx-auto text-white">
+                <h1 className="mt-3 text-white">How it works ?</h1>
+                <p className="section_subtitle mx-auto text-white">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
@@ -31,36 +31,35 @@ const HomeProducts = () => {
             </div>
           </div>
 
-          <div class="row mt-5 vertical_content_manage">
-            <div class="col-lg-6">
-              <div class="mt-3">
-                <h2 class="text-white text-capitalize work_flow_soft">
+          <div className="row mt-5 vertical_content_manage">
+            <div className="col-lg-6">
+              <div className="mt-3">
+                <h2 className="text-white text-capitalize work_flow_soft">
                   {" "}
                   We Develop Exceptional Enterprise software solution.
                 </h2>
-                <div class="home_text_details">
-                  <p class="home_subtitle mt-4 mb-0">
+                <div className="home_text_details">
+                  <p className="home_subtitle mt-4 mb-0">
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
                     its layout. The point of using Lorem Ipsum. Ut tincidunt ex
                     a tempor congue, lacus magna pretium quam.{" "}
                   </p>
                 </div>
-
-                <div class="home_btn_manage mt-5">
-                  <a href="#" class="learn-more mr-3">
+                <div className="home_btn_manage mt-5">
+                  <Link to="#" className="learn-more mr-3">
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6">
-              <div class="home_side_img mt-3">
+            <div className="col-lg-6">
+              <div className="home_side_img mt-3">
                 <img
                   src={Info}
                   alt=""
-                  class="img-fluid mx-auto d-block"
+                  className="img-fluid mx-auto d-block"
                 />
               </div>
             </div>
@@ -96,21 +95,21 @@ const HomeProducts = () => {
             </div>
           </div>
         </div>
-        <section class="section_all bg_custom_color">
-            <div class="container">
-                <div class="row vertical_content_manage">
-                    <div class="col-lg-6">
-                        <div class="features_img mt-3">
-                            <img src={Laptop} alt="" class="img-fluid mx-auto d-block"/>
+        <section className="section_all bg_custom_color">
+            <div className="container">
+                <div className="row vertical_content_manage">
+                    <div className="col-lg-6">
+                        <div className="features_img mt-3">
+                            <img src={Laptop} alt="" className="img-fluid mx-auto d-block"/>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="section_title_all">
-                            <h3 class="text-white mt-3">15-days Delivery. Get Download Now.</h3>
-                            <p class="section_subtitle mx-auto text-white mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                            <div class="mt-5">
-                                <a href="#" class="learn-more">Download Now</a>
+                    <div className="col-lg-6">
+                        <div className="section_title_all">
+                            <h3 className="text-white mt-3">15-days Delivery. Get Download Now.</h3>
+                            <p className="section_subtitle mx-auto text-white mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                            <div className="mt-5">
+                                <Link to="#" className="learn-more">Download Now</Link>
                             </div>
                         </div>
                     </div>

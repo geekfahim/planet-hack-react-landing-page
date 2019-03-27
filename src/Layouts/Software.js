@@ -1,8 +1,11 @@
 import React from 'react';
+import PrimaryMenu from '../Components/PrimaryMenu';
 
 const Software = () => {
     return ( 
-        <div></div>
+        <div>
+            <PrimaryMenu/>
+        </div>
      );
 }
  

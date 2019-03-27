@@ -4,8 +4,10 @@ const MinServices = (props) => {
   return (
       <div className="container-fluid">
     <div className='services bg-item'>
-      <h1 className='main-title'>{props.title}</h1>
-      <p className="sub-title">{props.subtitle}</p>
+      <div className="main-title">
+      <h1>{props.title}</h1>
+      </div>
+      {/* <p className="sub-title">{props.subtitle}</p> */}
         <div className="row">
           <div className="col-md-3">
             <div className="card">
